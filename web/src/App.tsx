@@ -17,10 +17,10 @@ import { getAtentado } from "./utils/getAtentado";
 import { getFem } from "./utils/getFem";
 import { getMasc } from "./utils/getMasc";
 import { getMenor } from "./utils/getMenor";
-
-import "./styles/global.css";
 import { getOutros } from "./utils/getOutros";
 import { getMaior } from "./utils/getMaior";
+
+import "./styles/global.css";
 
 const tabs: string[] = [
 	"Responder pesquisa",
@@ -63,7 +63,6 @@ export function App() {
 			totalMenor: getMenor(responses),
 			totalMaior: getMaior(responses),
 		});
-		console.log(stats);
 	}
 
 	useEffect(() => {
